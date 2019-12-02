@@ -3,7 +3,7 @@ import json
 import OthelloAction
 import AuthCheck
 
-base_url = "http://ec2-13-231-106-93.ap-northeast-1.compute.amazonaws.com/api/"
+base_url = "http://tdu-othello.xyz/api/"
 headers = AuthCheck.auth_check(base_url)
 
 r = requests.post(base_url + "where", headers=headers)
