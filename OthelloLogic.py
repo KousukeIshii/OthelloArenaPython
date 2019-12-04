@@ -94,4 +94,14 @@ def getReverseboard(board):
                 board[x][y] = rev_board[x][y] * -1    
         return board
 
+
+def printBoard(board):
+    
+    for y in board:
+        row = ''
+        for x in y:
+            cell = '○ ' if x == 1 else '● ' if x == -1 else '  '
+            row += cell
+        print(row)
+
     
