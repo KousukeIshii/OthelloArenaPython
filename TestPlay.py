@@ -24,7 +24,9 @@ while(True):
 		print('合法手ではない手が打たれました' + action)
 		exit()
 	board = OthelloLogic.execute(board,action,player,size)
-
+	OthelloLogic.printBoard(board)
+	print('現在の合法手一覧')
+	print(moves)
 	moves = OthelloLogic.getMoves(board,player*-1,size)
 	if(len(moves) == 0):
 		moves = OthelloLogic.getMoves(board,player,size)
